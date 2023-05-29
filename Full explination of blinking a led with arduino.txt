@@ -1,0 +1,40 @@
+// This program blinks the built-in LED on the Arduino board on and off at one-second intervals.
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT); // Set the built-in LED pin (usually pin 13) as an output
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH); // Turn the LED on by setting the pin to HIGH
+  delay(1000); // Wait for 1 second
+  digitalWrite(LED_BUILTIN, LOW); // Turn the LED off by setting the pin to LOW
+  delay(1000); // Wait for 1 second
+}
+
+
+
+In the above code:
+
+The setup() function is called once when the Arduino board starts. It is used to initialize the board and set up any necessary configurations. In this case, we use the pinMode() function to set the built-in LED pin (usually pin 13) as an output pin.
+
+The loop() function is where the main code execution takes place. It runs repeatedly after the setup() function finishes executing. Inside the loop() function, we have the following steps:
+
+digitalWrite(LED_BUILTIN, HIGH); turns on the LED by setting the pin connected to the built-in LED to a HIGH state. The LED_BUILTIN constant refers to the pin number of the built-in LED on the Arduino board.
+
+delay(1000); pauses the program for 1 second (1000 milliseconds) before proceeding to the next line of code.
+
+digitalWrite(LED_BUILTIN, LOW); turns off the LED by setting the pin to a LOW state.
+
+delay(1000); pauses the program for another 1 second.
+
+This sequence of turning the LED on and off with a delay creates a blinking effect.
+
+You can modify the pin number and delay values as per your requirements. Remember to connect an LED to the appropriate pin on the Arduino board if you're not using the built-in LED.
+
+Feel free to experiment with this code and explore the vast possibilities of Arduino programming!
+
+
+
+
+
+

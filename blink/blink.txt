@@ -1,0 +1,19 @@
+The setup() function is called once when the Arduino board starts. It is used to initialize the board and set up any necessary configurations. Here, we use the pinMode() function to set the built-in LED pin (usually pin 13) as an output pin. This allows us to control the LED by setting its pin to either HIGH (on) or LOW (off).
+
+The loop() function is where the main code execution takes place. It runs repeatedly after the setup() function finishes executing. Inside the loop() function, we have the following steps:
+
+digitalWrite(LED_BUILTIN, HIGH); turns on the LED by setting the pin connected to the built-in LED to a HIGH state. This sends a voltage to the LED, causing it to illuminate.
+
+delay(1000); pauses the program for 1 second (1000 milliseconds) before proceeding to the next line of code. This keeps the LED on for 1 second.
+
+digitalWrite(LED_BUILTIN, LOW); turns off the LED by setting the pin to a LOW state. This cuts off the voltage to the LED, turning it off.
+
+delay(1000); pauses the program for another 1 second. This keeps the LED off for 1 second before repeating the loop.
+
+By alternating the LED between on and off states with 1-second delays, the code creates a blinking effect. You can modify the delay values to adjust the blinking speed. Additionally, if you're using a different pin for an external LED, make sure to update the pin number in the pinMode() and digitalWrite() functions accordingly.
+
+Feel free to experiment with this code and customize it to suit your needs!
+
+
+
+
